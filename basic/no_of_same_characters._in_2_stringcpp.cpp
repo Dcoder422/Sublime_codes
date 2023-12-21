@@ -1,0 +1,3 @@
+KKKKK        cout << c << endl;
+        }
+        }

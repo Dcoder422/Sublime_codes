@@ -1,0 +1,7 @@
+
+int huu(){
+    return 5;
+}
+int Solution::paint(int A, int B, vector<int> &C) {
+    return huu();
+}

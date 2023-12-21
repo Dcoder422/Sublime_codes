@@ -1,0 +1,10 @@
+*** no need to define functions**(here in sublime..dont know abt c)
+
+function should be declared and defined outside main function
+struct stack{
+	int top;
+	char arr[]; //size of array not required
+};
+int xyz(){
+	*** return is not compulsory
+}
