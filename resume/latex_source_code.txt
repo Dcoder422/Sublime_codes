@@ -1,0 +1,266 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%https://www.overleaf.com/project/678dd6dbc8c9a579264b5224
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+
+
+\begin{center}
+    {\Huge \scshape Dhruvi Jain} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91-7579499459 ~ \href{mailto:dhruvijain2219@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{dhruvijain2219@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/dhruvi-jain-14aa7822b/}{\raisebox{-0.2\height}\faLinkedin\ \underline{LinkedIn}}  ~
+    \href{https://github.com/Dcoder422}{\raisebox{-0.2\height}\faGithub\ \underline{GitHub}}
+     ~
+    \href{https://www.kaggle.com/dhruvi4jain}{\raisebox{-0.2\height}\faKaggle\ \underline{Kaggle}}
+    \vspace{-8pt}
+\end{center}
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Technology (BHU) Varanasi}{2025}
+      {B.Tech in Electronics Engineering}{Current GPA: 9.47}
+    \resumeSubheading
+      {Nirmala Convent Sr. Sec. School, Kathgodam, Nainital}{2021}
+      {Class 12 - CBSE}{Percentage: 94.6}
+    \resumeSubheading
+      {All Saints’ College, Nainital}{2019}
+      {Class 10 - ICSE}{Percentage: 96}
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: C/C++, Python (NumPy, Pandas), SQL (Postgres), Java, HTML/CSS} \\
+     \textbf{Tools}{: C++ STL, Git, VS Code, MySQL, FastAPI, Jupyter, TensorFlow, Matplotlib, Scikit-learn, OpenCV, Power BI} \\
+     \textbf{Areas of Interest}{: Data Structures and Algorithms, Competitive Programming, Machine Learning, Data Science} \\
+    }}
+ \end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {A.P.T. Research Private Limited ( FKA A.P.T. Portfolio Private Limited )}{May’24– July’24}
+      {Software Engineering Intern, Data Management and Research Team}{Delhi, India}
+      
+      \resumeProjectHeading
+          {\textbf{Data-API } $|$ \emph{FastAPI-based service for uniform exchange metadata access}}{}
+      \resumeItemListStart   
+        \resumeItem{ Added \textbf{authorized endpoints} to improve security with robust authentication mechanisms.}
+        \resumeItem{\textbf{Redesigned model inheritance} to minimize redundancy and maintain existing functionality.}
+        \resumeItem{\textbf{Upgraded Pydantic} to version 2.7, maintaining compatibility and addressing version differences.}
+        \resumeItem{Created \textbf{automated documentation} with API grouping, example code, and a functional \textbf{Try It Out} feature.}
+      \resumeItemListEnd
+      
+      \resumeProjectHeading
+          {\textbf{Falcon } $|$ \emph{ Data parser and validator for exchange data}}{}
+      \resumeItemListStart   
+        \resumeItem{ Added validations for \textbf{PCAP} and Unicast data files to ensure data integrity and accurate parsing.}
+        \resumeItem{Implemented a unicast parser using \textbf{Arrow Python} bindings to convert data into DataFrame formats.}
+        \resumeItem{Developed a metadata reader to simplify and validate exchange data CSV files into pandas DataFrames.}
+        \resumeItem{Enhanced segment filtering by parsing data and filtering in a single pass, \textbf{reducing execution time by 50\%.}}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+\resumeSubHeadingListEnd
+
+
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Movie Recommendation System using Machine Learning} $|$ \emph{Python, NumPy, Pandas, Matplotlib, Classical ML}}{}
+          \resumeItemListStart
+            \resumeItem{Conducted data cleaning and feature engineering on the movie dataset, including exploratory data analysis to identify key features and select crucial categories from high-dimensional data.}
+        
+            \resumeItem{Trained the model using CatBoost, which outperformed several other models.
+            \href{https://github.com/Dcoder422/Movie-Recommendation-System}{\underline{[GitHub Link]}}}
+        \resumeItemListEnd
+        
+      \resumeProjectHeading
+          {\textbf{ Data Analysis Reports} $|$ \emph{Python, Pandas, Matplotlib, Seaborn, Plotly, Power BI, Scikit-learn}}{}
+          \resumeItemListStart
+            \resumeItem{Performed Exploratory Data Analysis of social media company data using Power BI.} {[Links: \href{https://drive.google.com/file/d/1CIAJdyLZOWShthNsY04VCqE3HKIUwWVe/view?usp=drive_link}{\underline{Report}}, \href{https://drive.google.com/file/d/1bJpTLf2gZ5aIu1ukH_r5gLQj4-30ag4p/view?usp=drive_link}{\underline{Dashboard}}]}
+            \resumeItem{Analyzed e-commerce data and conducted hypothesis testing using Python libraries.}  {[Links: \href{https://drive.google.com/file/d/1Z_t35lQ9jO32hK4kmTB3FaGHT8AnlVkM/view?usp=drive_link}{\underline{Report}}, \href{https://github.com/Dcoder422/Data-Analysis-Report}{\underline{Code}}]}
+          \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+
+%   
+
+%-----------Position of Responsibility-----------
+\section{Position of Responsibility}
+
+\resumeSubHeadingListStart 
+      \resumeItemListStart[leftmargin=0.15in]
+        \resumeItem{\textbf{Department Undergraduate Committee (DUGC) Representative 2023-2024:} Oversaw academic activities and
+ course-related matters within the department, ensuring smooth operations and addressing student concerns.}  
+ \resumeItem{\textbf{Head of the Club of Programmers Machine Learning Group (COPS IG) 2023-2024:} Organized recruitments, mentored second-year juniors to secure ML internships, and oversaw hackathons and workshops.}
+      \resumeItemListEnd
+      \resumeSubHeadingListEnd
+
+%----------- HONOURS AND ACHIEVEMENTS-----------
+\section{ HONOURS AND ACHIEVEMENTS}
+
+\resumeSubHeadingListStart 
+      \resumeItemListStart[leftmargin=0.15in]
+        \resumeItem{\textbf{Department Rank 2} in Electronics Engineering at IIT(BHU) with Academic Excellence (\textbf{A}*) in \textbf{7 courses}.}  
+ \resumeItem{Secured \textbf{Global Rank 72 in ICPC Algo Queen 2024 Finals}.}
+ \resumeItem{Max-rated \textbf{Expert} on Codeforces (handle \href{https://codeforces.com/profile/D_coder22}{\underline{link}}), with submissions in both Python and C++.} 
+ \resumeItem{ Secured rank \textbf{1741} in \textbf{Google Kickstart} 2022 Round H.} 
+ \resumeItem{Secured \textbf{3rd position} in \textbf{MLWare’23}, a Machine Learning-based event of Technex’23 at IIT(BHU).}
+ \resumeItem{Secured \textbf{1st position} in \textbf{Ctrl Shift Intelligence'22}, a Machine Learning competition in COPS Week'22.} 
+      \resumeItemListEnd
+      \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}

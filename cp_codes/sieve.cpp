@@ -38,9 +38,14 @@ for(int i=lp[num];i*i<=num;i++){
     }
     if(i>1)v.push_back(i);
 
-
-   
-
   // O(log N)
 
 for ALL divisors:**works for N=1e5+10***
+
+*************** v imp for divisors
+https://codeforces.com/blog/entry/14463?#comment-194529 
+
+for contests no. of divisors : ~ N^(1/3)=> cube root of N
+    The number is 1344 for integers up to 10^9 and 103680 for integers up to 10^18
+
+   

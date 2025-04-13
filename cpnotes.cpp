@@ -7,6 +7,9 @@ using namespace std;
 // snippet name --- mycode
 // choose for       for 
 // for -> for loop snippet 
+// test
+// stree
+// notest
 int main(){
     // use c++14
   
@@ -1294,7 +1297,7 @@ i.e 1891232 is output as 1.8912321e+006
 
   ** to remove duplicates in a vector
   ar.erase(unique(ar.begin(), ar.end()), ar.end());
-
+  // ar vector should be sorted //
 
 
   ** always checkouts editotials even if ur method is short
@@ -1642,8 +1645,10 @@ data structures(set or any other)
 
   ****
 
-  stoi()-- string to integer("23"-23)
-  to_string()===(23-"23")
+  stoi()-- string to integer("23"->23)
+  to_string()===(23->"23")
+
+  *****
 
   stack is used for both
   1. evaluating postfix notation from inorder notation of an arithmetic expression 
@@ -1876,7 +1881,8 @@ unique() removes duplicate elements only when they are consecutive
     
     for undirected connected graph  :
      bridge/articulation points - disc , low, par , vis 
-     
+     imp* if an edge is not a bridge then it is part of a cycle
+
      kosaraju - strongly connected compo- topo sort(way of stacks (using dfs only(not bfs))) - transpose - dfs 
      
      bellman ford - shortest path with negative weights-negative cycle detection -- n-1 times - DAG(convert undirected to directed)
@@ -2269,3 +2275,380 @@ ceil(pow(n,0.5)) = pow(n,0.5) + ((int)pow(n,0.5)*(int)pow(n,0.5)!=n)
 ****
 in graphs alsways consider a case - if its disconnected
 
+****
+**
+most imp -> be aware with hash tables they can easily be
+hacked -> use custom function
+
+***
+less<int> - comparator for 
+
+ use sqrtl(x) for a precise square root function
+
+
+ sort(a.rbegin(), a.rend()); -> to sort in reverse order
+
+ in c++ for interactive -> endl itself flushes
+
+ set.erase(element) doesnt give error if element is not present in set
+
+  Using prev() to get the iterator to the previous element
+  works for vector/sets
+    auto it = prev(numbers.end());
+
+
+***** v imp ******
+ If you think about that from the perspective of the Euclid s algorithm of finding the gcd, 
+ you can rewrite it as gcd(a2−a1,a3−a2,…,an−an−1,max−an)
+. Think about it on some small n
+. gcd(a3−a1,a2−a1)=gcd((a3−a1)−(a2−a1),a2−a1)=gcd(a3−a2,a2−a1)
+. Basically, you can arbitrarily add or subtract the arguments of gcd from each other. 
+
+
+
+*************** v imp for divisors
+https://codeforces.com/blog/entry/14463?#comment-194529
+
+
+vvvvvvvvv imp
+--> we do not use vis in 0-1 BFS
+
+nth_element in STL to get an O(n)
+ solution.
+
+  ~ c*10^8 operations in 2 sec 
+---> c is very small like --1,2
+
+***** memset doesnt works for all values
+fill(arr, arr + N, val);
+
+GCD(a1,a2,a3,…,an)=GCD(a1,a1+a2,a1+a2+a3,…,a1+a2+a3+…+an)
+
+Generally (most of which I encountered), game theory questions can be guessed by writing the answer for some initial numbers
+
+There are 5133 prime numbers up to 50000
+
+any sequence of length at least 5
+ contains either non-decreasing or non-increasing subsequence of length 3
+
+every sequence numbers length N the product of the length of LIS(longest increasing subsequence) and LDS(longest decreasing subsequence) is greater than N. For instance, either length of LIS or LDS should be greater than ceil(sqrt(N))
+
+see last line->https://codeforces.com/blog/entry/93703?#comment-827127
+
+x, and we can only afford O(n) memory due to the memory limit-128MB
+
+Firstly, we will let one player make all moves and then analyze for 
+the different moves of the 2nd player
+this way also we can analyze a problem and see for optimum answers
+
+both players play optimally=> both have same strategy
+
+** rotated array trick -> write array twice
+
+**merge(all(a), all(b), c.begin(), greater<int>());
+
+can use in built merge function
+Similar to the less<int>() function, the greater<int>( to sort in descending order)
+
+std::string str = "12345a678";  
+// Define a size_t variable to store the position
+std::size_t pos;   
+// Convert the initial part of the string to an integer
+int num = std::stoi(str, &pos);
+int num2 = std::stoi(&str[pos+1]);
+
+tuple<int, int, int> health_points [N*2];
+health_points[i] = make_tuple(0, i, base_health[i]);
+int time, enemy, health;
+tie(time, enemy, health) = health_points[i];
+
+(a)xor(a+1)=1 always 
+xor of any 2 consecutive no.s is 1
+xor of any 4 consecutive no.s is 0 (1^1)
+^->xor
+
+ Applying one step of Euclid s algorithm
+gcd(a,b)=gcd(b−a,a)
+
+C(n, r) = C(n — 1, r) + C(n — 1, r — 1)
+
+Let k be the number of digits in the binary representation of n. 
+Every number x<n satisfies the property that, 
+for some i (1≤i<k), the first i-1 digits(from left) of x are the same as that of n, 
+the ith digit of n is 1, and the i-th digit of x is 0.
+(for index more than i we can have both 1 ans 0 and still x remains less than n)
+
+
+always do
+if(m.find(s-i)!=m.end())ans+=m[s-i];
+not
+ans+=m[s-i];
+
+as if (s-i) is not present it creates a new entry 
+which causes significant increase in time complexity
+
+no. of 1s in (xor of 2 no.s) can be even only if the no.s have same parity(no. of set bits)
+xor = (a | b) - (a & b)
+
+******** vvvvvvv imp technique
+if no.s are repeating and after an updation u need to shift them
+(no with same value) to a new position so instead of shifting each no. 
+make a freq array and depict shifting by updating the array
+
+
+**********
+if a data structure cannot be hashed easily like vectors,
+    to count equal vectors instead of matching with each vector 
+and getting O(n^2) 
+sort the list of vectors (vector of vector) and get answer in O(nlogn)
+
+******** nice way of using 2 state dp
+int prv = (i + 1) % 2;
+int cur = i % 2;
+
+dp[cur]=dp[prv]......
+
+
+*******
+int a[] -> arrays can not be compared but 
+vector can be compared 
+that if vector<int> a,b;
+if(a<b)is valid 
+
+***** hence vector of vectors can be sorted
+
+
+***** Sieve can work up to 10^7 no.s in contests
+
+
+***** like in segment tree we break segment into half 
+and 2N-1 segment are formed (l,r) 
+that is tree has max 2N nodes 
+*************** no matter u divide a segment into 
+how many sub segments -> max nodes will be 2N
+f(l,r)->f(l,r1)+f(r1+1,r2)+f(r2+1,r3)......f(rx,r)
+f(l,r1) -> f(l,rr)+.......f(rx,r1)
+
+****
+LLONG_MAX
+
+1. endl -> "\n"" reduces time a lot
+2. instead of making a vector and supplying it to a function
+   better supply its value
+
+
+template<class T> using oset =tree<T, null_type, less_equal<T>, rb_tree_tag,tree_order_statistics_node_update> ;
+// find_by_order, order_of_key
+//  declaration => oset<data_type> s;
+--> if u change less to less_equal , then lower_bound and upper_bound may not work
+properly but find_by_order, order_of_key will work correctly.
+
+-********
+converting string to binary   
+for(S = 0, j = m; j; j--)
+        S = S<<1|(st[j]^'0');
+
+or 
+
+ll s ; in s;
+ll bin(ll s){
+    if(!s)return 0ll;
+    return 2*bin(s/10)+s%10;
+}
+
+
+************
+ there exists (x,y) such that gcd(x,y)=1 (coprimes)
+ and 1 ≤ L ≤ x ≤ y ≤ R ≤ 10^18 and
+R−L−21 ≤ y−x ≤ R−L
+https://atcoder.jp/contests/arc137/editorial/11700
+or
+https://codeforces.com/blog/entry/137801
+2043D - Problem about GCD
+
+***********
+Average gap between two primes is about ln(n)
+
+********* v vv v v v nice
+new concept->prefix xor
+Let the prefix-xor array be called b
+Now, al⊕al+1⋯⊕ar=bl−1⊕br 
+
+a[l]⊕a[l+1]⋯⊕a[r]=b[l−1]⊕b[r] // b is prefix-xor
+a[l]+a[l+1]+⋯+a[r]=b[r]-b[l-1] // b is prefix-sum
+
+
+************ 
+if a question can be solved by segment tree and there  
+are no updates needed, then it can also be solved by
+priority_queue, set and ordered set;
+
+also one more method -> solve offline
+cf edu lst que of segment treej
+
+min heap
+priority_queue<int,vector<int>,greater<int>> pq;
+
+
+************
+generating random numbers
+
+ll mod=1e18;
+mt19937_64 rng(chrono::steady_clock::now().time_since_epoch().count());
+rand_no=rng()%mod;
+
+************
+xor hashing
+https://codeforces.com/blog/entry/85900
+
+**********
+
+sort(all(ord),[&](ll a,ll b){return m[a]<m[b]});
+
+example use:
+For(i,0,n){
+    in v[i].x >> v[i].y ;
+    idx.push_back(i);
+}
+sort(all(idx)
+
+
+**********
+
+if size exceeds 10^5 then take global variables
+
+**********
+
+ll xyz(ll i){
+    // any thing
+    // but if you do not return a value
+    // it might work in your compiler
+    // but not cf's and many other
+}
+
+**********
+
+map<ll,ll> m;
+m.contains(x)->returns bool
+
+****
+vector<array<ll, 2>> e;
+// doesnt work in my compiler through
+for (auto [x, y] : e) {
+
+**********
+array can also be compared
+so instead of pair 
+start using array
+
+
+***********
+void func(int **arr, int row, int col)        //function prototype
+   {
+      for (int i=0; i<row; i++)
+      {
+         for(int j=0 ; j<col; j++)
+         {
+           cout<<arr[i][j]<<" ";   //printing each element of array
+         }
+         cout<<"\n";
+    }
+
+***********
+also vectors can be compared.
+
+**********
+use cout.flush()
+after every cout 
+
+ex.
+out "?" o lst[*it] o cv e;
+cout.flush();
+
+******
+ceil(sum/x)=(sum + x - 1) / x
+
+*** 
+same sol for c++17 gave tle and passed in c++23
+
+__lg(k) -> calculates log and returns int (the heighest set bit)
+
+*********
+// Resize the rows and cols of 2d vector
+vector<vector<int>> v;
+v.resize(2, vector<int>(3));
+
+v.assign(2, vector<int>(3));
+Vector assign() creates a new vector, removing all previously stored elements.
+
+***
+-ve%+ve = -ve
+
+*****
+in oset -> lower_bound and upper_bound doesnt works when using it as multiset
+
+*****
+digit sum->dp 
+1.upper bound 
+2.leading zeroes
+
+*****
+
+v.end()[-1]-> gives v.back()
+v.end()[-2]-> gives second last element
+
+****
+better way 
+int dx[4]={0,1,-1,0};
+int dy[4]={1,0,0,-1};
+string dir = "RDUL";
+
+
+n^2 * 2^n for n=20 passes 1 sec
+
+int p[8];
+iota(p,p+8); // gives 0,1,2...8
+random_shuffle(p,p+8); // shuffles them
+
+sort(contri.begin(),contri.end(),greater<pair<int,int>>());
+for descending order
+
+
+for LCA always take indexing from 1
+so that non existing boss is 0 and it keeps interating 
+without giving problems
+
+****
+to convert tree to range 
+use-> visting time range
+
+fill(dis + 1, dis + mxd + 1, 0);
+
+int total_cnt[200001]{1};
+=> total_cnt[0]=1;
+
+
+catalin no.s 
+
+
+mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
+shuffle(permutation.begin(), permutation.end(), rng);
+
+
+
+In C++, the & inside the lambda expression [&] is a capture list. 
+It determines how the lambda function will access variables from the 
+surrounding scope.
+
+Specifically:
+
+& means capture by reference. This means that the lambda will capture 
+all variables from the surrounding scope by reference. Any variable 
+used inside the lambda that is not passed explicitly as a parameter 
+will be accessed by reference, meaning changes to the variable inside the lambda will affect the original variable outside the lambda.
+
+
+memcpy(dest_arr, src_arr, 4*n);
+4*n - size of int array of size n 
+
+(dp[i][len[j][k]] += dp[i-1][j])%=md

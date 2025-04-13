@@ -17,10 +17,6 @@ void all_divisors(ll a,vi &factors){
 
 
 
-
-
-
-
  vi all_prime_factors(ll a){
        vi factors;
         For(i,2,a+1){
@@ -36,3 +32,12 @@ void all_divisors(ll a,vi &factors){
      
      return factors;
  }
+
+
+
+
+for (long long i=2; i<=b; i++) {
+    if (1LL * i * i > b) i = b;
+    int cnt = 0;
+    while (b % i == 0) {b /= i; cnt++;}
+} 

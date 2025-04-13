@@ -24,4 +24,6 @@ string isBalanced(string s) {
 }
 int main(){
 cout << isBalanced("{{[[(())]]}}");
+cout << 2*3/2 << 2*(3/2);
 }
+

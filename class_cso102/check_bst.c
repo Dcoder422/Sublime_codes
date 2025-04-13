@@ -34,7 +34,7 @@ int main(){
 	struct node * n[5];
 	n[0]=create_node(5);
 	n[1]=create_node(3);
-	n[2]=create_node(6);
+	n[2]=create_node(4);
 	n[3]=create_node(2);
 	n[4]=create_node(4);
 	
@@ -43,4 +43,5 @@ int main(){
 	n[1]->left=n[3];
 	n[1]->right=n[4];
 	printf("%d",isBST(n[0]));
+	printf("hi");
 }	

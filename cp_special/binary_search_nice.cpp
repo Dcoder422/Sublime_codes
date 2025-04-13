@@ -1,4 +1,43 @@
+if you want to find the lowest x
+ satisfying f(x)
+:
+int l=lowest_possible_value-1,r=highest_possible_value,m;
+while(r-l>1)
+{
+    m=l+(r-l)/2;if(f(m))r=m;else l=m;
+}
+return r;
+
+and vice versa if you want to find the highest x
+ satisfying g(x)
+:
+
+int l=lowest_possible_value,r=highest_possible_value+1,m;
+while(r-l>1)
+{
+    m=l+(r-l)/2;if(g(m))l=m;else r=m;
+}
+return l;
+
+
+
 //https://www.spoj.com/problems/EKO/
+
+
+
+Nice binary search : N+1 is invalid value(need to be handled in check() 
+function), so r will always have a value that is not the answer, 
+hence always l will be the answer  
+int l = 0, r = n+1;
+while(r - l > 1){
+   int mid = (l+r)/2;
+   if(check(mid))
+      l = mid;
+   else
+      r = mid;
+}
+
+
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -25,3 +64,24 @@ int main(){
        }
        cout << ((wood(hi,n,m))?hi : lo )<<endl;
  }
+
+
+void solve(){
+    ll n,k;in n >> k;
+    ll a[n]; inv(a,n);
+    ll l=0,h=2,mid; 
+    while(1){
+       ll su=0;
+        For(i,0,n)su+=h/a[i]; 
+        if(su>=k)break; 
+        else h*=2;
+    }
+    while(h-l>1){
+        mid = (l+h)/2; 
+        ll su=0;
+        For(i,0,n)su+=mid/a[i];
+        if(su>=k)h=mid;
+        else l=mid;
+    }
+    out h e;
+}
